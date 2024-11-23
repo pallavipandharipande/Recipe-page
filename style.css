@@ -3,11 +3,353 @@
     padding: 0;
 }
 
-html {
-    background-color: #f3e5d8;
+body {
+    border-radius: 20px;
 }
 
-body {
-    margin: 10rem 25rem 10rem 25rem;
-    background-color: white;
+@font-face {
+    font-family: YoungSerif;
+    src: url(YoungSerif-Regular.ttf);
+}
+
+#titleDiv {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#title {
+    font-family: YoungSerif;
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1rem + 2.5vw, 5rem);
+    
+    margin-top: 0.2rem;
+    margin-top: clamp(0.2rem, 0.08571428571428573rem + 0.5714285714285714vw, 1rem);
+
+    margin-bottom: 0.5rem;
+    margin-bottom: clamp(0.5rem, 0.2142857142857143rem + 1.4285714285714286vw, 2.5rem);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 90vw;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(Outfit-VariableFont_wght.ttf);
+}
+
+.intro {
+    width: 90vw;
+    font-family: Outfit;
+    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 0.5142857142857142rem + 0.9285714285714286vw, 2rem);
+    margin-top: 0.5rem;
+    margin-top: clamp(0.5rem, 0.2142857142857143rem + 1.4285714285714286vw, 2.5rem);
+    margin-bottom: 0.5rem;
+    margin-bottom: clamp(0.5rem, 0.2142857142857143rem + 1.4285714285714286vw, 2.5rem);
+}
+
+.preparation {
+    width: 90vw;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+}
+
+#prepTitle {
+    font-family: YoungSerif;
+    color: hsl(332, 51%, 32%);
+    font-size: 0.9rem;
+    font-size: clamp(0.9rem, 0.7714285714285715rem + 0.6428571428571428vw, 1.8rem);
+    margin-top: 0.3rem;
+    margin-top: clamp(0.3rem, 0.1285714285714286rem + 0.857142857142857vw, 1.5rem);
+    margin-bottom: 0.3rem;
+    margin-bottom: clamp(0.3rem, 0.1285714285714286rem + 0.857142857142857vw, 1.5rem);
+    margin-left: 0.3rem;
+    margin-left: clamp(0.3rem, 0.1285714285714286rem + 0.857142857142857vw, 1.5rem);
+}
+
+#prep {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 4rem;
+    height: clamp(4rem, 3.142857142857143rem + 4.285714285714286vw, 10rem);
+    font-family: Outfit;
+    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 0.5142857142857142rem + 0.9285714285714286vw, 2rem);
+    margin-bottom: 0.7rem;
+    margin-bottom: clamp(0.7rem, 0.48571428571428565rem + 1.0714285714285716vw, 2.2rem);
+    margin-left: 1.4rem;
+    margin-left: clamp(1.4rem, 0.9714285714285713rem + 2.1428571428571432vw, 4.4rem);
+}
+
+.ingredient {
+    width: 90vw;
+    margin-top: 0.5rem;
+    margin-top: clamp(0.5rem, 0.2857142857142857rem + 1.0714285714285714vw, 2rem);
+    margin-bottom: 0.5rem;
+    margin-bottom: clamp(0.5rem, 0.2857142857142857rem + 1.0714285714285714vw, 2rem);
+}
+
+.ingredientTitle {
+    font-family: YoungSerif;
+    color: #7F523D;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.7142857142857143rem + 1.4285714285714286vw, 3rem);
+}
+
+.ingredientList {
+    font-family: Outfit;
+    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 0.5142857142857142rem + 0.9285714285714286vw, 2rem);
+    margin-left: 1.4rem;
+    margin-left: clamp(1.4rem, 0.9714285714285713rem + 2.1428571428571432vw, 4.4rem);
+    margin-top: 0.7rem;
+    margin-top: clamp(0.7rem, 0.48571428571428565rem + 1.0714285714285716vw, 2.2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7rem;
+    height: clamp(7rem, 5.428571428571429rem + 7.857142857142857vw, 18rem);
+}
+
+hr {
+    width: 100vw;
+}
+
+.instruction {
+    width: 90vw;
+    margin-top: 0.5rem;
+    margin-top: clamp(0.5rem, 0.2857142857142857rem + 1.0714285714285714vw, 2rem);
+    margin-bottom: 0.5rem;
+    margin-bottom: clamp(0.5rem, 0.2857142857142857rem + 1.0714285714285714vw, 2rem);
+}
+
+.instructionTitle {
+    font-family: YoungSerif;
+    color: #7F523D;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.7142857142857143rem + 1.4285714285714286vw, 3rem);
+}
+
+.instructionList {
+    font-family: Outfit;
+    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 0.5142857142857142rem + 0.9285714285714286vw, 2rem);
+    margin-left: 1.4rem;
+    margin-left: clamp(1.4rem, 0.9714285714285713rem + 2.1428571428571432vw, 4.4rem);
+    margin-top: 0.7rem;
+    margin-top: clamp(0.7rem, 0.48571428571428565rem + 1.0714285714285716vw, 2.2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20rem;
+    height: clamp(20rem, 17.857142857142858rem + 10.714285714285714vw, 35rem);
+    height: 18rem;
+    height: clamp(18rem, 15.571428571428571rem + 12.142857142857142vw, 35rem);
+}
+
+.nutrition {
+    width: 90vw;
+    margin-top: 0.5rem;
+    margin-top: clamp(0.5rem, 0.2857142857142857rem + 1.0714285714285714vw, 2rem);
+    margin-bottom: 0.5rem;
+    margin-bottom: clamp(0.5rem, 0.2857142857142857rem + 1.0714285714285714vw, 2rem);
+}
+
+.nutritionTitle {
+    font-family: YoungSerif;
+    color: #7F523D;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.7142857142857143rem + 1.4285714285714286vw, 3rem); 
+}
+
+.nutritionIntro {
+    font-family: Outfit;
+    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 0.5142857142857142rem + 0.9285714285714286vw, 2rem);
+    margin-top: 0.7rem;
+    margin-top: clamp(0.7rem, 0.48571428571428565rem + 1.0714285714285716vw, 2.2rem);
+}
+
+.nutritionTable {
+    width: 90vw;
+    font-family: Outfit;
+    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 0.5142857142857142rem + 0.9285714285714286vw, 2rem);
+    margin-top: 0.7rem;
+    margin-top: clamp(0.7rem, 0.48571428571428565rem + 1.0714285714285716vw, 2.2rem);
+    margin-bottom: 0.5rem;
+    margin-bottom: clamp(0.5rem, 0.35714285714285715rem + 0.7142857142857143vw, 1.5rem);
+}
+
+th {
+    padding: 0.5rem;
+    padding: clamp(0.5rem, 0.35714285714285715rem + 0.7142857142857143vw, 1.5rem);
+}
+
+td {
+    padding: 0.5rem;
+    padding: clamp(0.5rem, 0.35714285714285715rem + 0.7142857142857143vw, 1.5rem);
+}
+
+td:nth-child(2){
+    color: #7F523D;
+}
+
+li::marker {
+    color: #7F523D;
+}
+
+
+/* Made use of media queries to make the webpage responsive */
+
+/* For tablets 768px */
+@media (min-width: 48em) {
+    html {
+        background-color: #F3E5D8;
+    }
+
+    body {
+        margin: 3rem 10rem 3rem 10rem;
+        background-color: white;
+    }
+    .image {
+        width: 53vw;
+    }
+    #titleDiv {
+        margin-left: 2.7vw;
+        margin-right: 2.7vw;
+    }
+    .intro {
+        width: 53vw;
+    }
+    .preparation {
+        width: 53vw;
+    }
+    .ingredient {
+        width: 53vw;
+    }
+    hr {
+        width: 58vw;
+    }
+    .instruction {
+        width: 53vw;
+    }
+    .nutrition {
+        width: 53vw;
+    }
+    .nutritionTable {
+        width: 53vw;
+    }
+}
+/* For laptops small size 1024px */
+@media (min-width: 64em) {
+    body {
+        margin: 3rem 15rem 3rem 15rem;
+    }
+    .image {
+        width: 49vw;
+    }
+    #titleDiv {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .intro {
+        width: 49vw;
+    }
+    .preparation {
+        width: 49vw;
+    }
+    .ingredient {
+        width: 49vw;
+    }
+    hr {
+        width: 53vw;
+    }
+    .instruction {
+        width: 49vw;
+    }
+    .nutrition {
+        width: 49vw;
+    }
+    .nutritionTable {
+        width: 49vw;
+    }
+}
+/* For laptops large size 1440px */
+@media (min-width: 90em) {
+    body {
+        margin: 3rem 20rem 3rem 20rem;
+    }
+    .image {
+        width: 52vw;
+    }
+    #titleDiv {
+        margin-left: 1.7vw;
+        margin-right: 1.7vw;
+    }
+    .intro {
+        width: 52vw;
+    }
+    .preparation {
+        width: 52vw;
+    }
+    .ingredient {
+        width: 52vw;
+    }
+    hr {
+        width: 55.5vw;
+    }
+    .instruction {
+        width: 52vw;
+    }
+    .nutrition {
+        width: 52vw;
+    }
+    .nutritionTable {
+        width: 52vw;
+    }
+}
+/* For desktop 2560px */
+@media (min-width: 160em) {
+    body {
+        margin: 3rem 35rem 3rem 35rem;
+    }
+
+    #title {
+        font-size: 6rem;
+    }
+    #titleDiv {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    hr {
+        width: 56.2vw;
+    }
+}
+
+/* Font used for footer */
+@font-face {
+    font-family: CormorantInfant-Regular;
+    src:url("CormorantInfant-Regular.ttf")
+}
+
+/* The footer of the webpage styled. Used clamp() function to make text reponsive to screen size */
+footer {
+    font-family: CormorantInfant-Regular;
+    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 0.5857142857142856rem + 0.5714285714285714vw, 1.5rem);
+    text-align: right;
 }
