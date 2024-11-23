@@ -24,11 +24,11 @@ Following screenshot taken from laptop (1710px)
 
 Following screenshot taken from mobile (320px)
 
-![](Recipe-page/Recipe_page_Mobile_(320px).png)
+![](Recipe_page_Mobile_(320px).png)
 
 
 ### Links
-- GitHub pages URL: (https://your-solution-url.com)
+- GitHub pages URL: (https://pallavipandharipande.github.io/Recipe-page/)
 
 
 ## My process
@@ -55,5 +55,5 @@ Got to know how margin and padding works. Also learned how to color just the bul
 
 ## Author
 - Name: Pallavi Pandharipande
-- Frontend Mentor - [@pallavipandharipande](https://www.frontendmentor.io/profile/pallavipandharipande)
+- Frontend Mentor - [@pallavipandharipande]
 
